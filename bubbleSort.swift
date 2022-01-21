@@ -1,4 +1,4 @@
-func BubbleSort(_ mas: inout[Int]){ //inout - ссылается на объект
+func bubbleSort(_ mas: inout[Int]){ //inout - ссылается на объект
     for i in 0..<mas.count {
         for j in 0..<mas.count - 1{
             if (mas[j+1] < mas[j]){
@@ -9,7 +9,7 @@ func BubbleSort(_ mas: inout[Int]){ //inout - ссылается на объек
 }
 
 var mas = [3,2,1,5]
-BubbleSort(&mas) //& используется с inout
+bubbleSort(&mas) //& используется с inout
 for i in mas {
     print(i)
 }
