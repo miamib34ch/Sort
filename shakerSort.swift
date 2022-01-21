@@ -1,6 +1,6 @@
 
 
-func ShakerSort(_ mas: inout[Int]){ //inout - ссылается на объект
+func shakerSort(_ mas: inout[Int]){ //inout - ссылается на объект
     var left = 0 //левый конец
     var right = mas.count-1 //правый конец
     while (left <= right){ //пока не дойдёт до середины
@@ -20,7 +20,7 @@ func ShakerSort(_ mas: inout[Int]){ //inout - ссылается на объек
 }
 
 var mas = [1,3,2,5]
-ShakerSort(&mas) //& используется с inout
+shakerSort(&mas) //& используется с inout
 for i in mas {
     print(i)
 }
